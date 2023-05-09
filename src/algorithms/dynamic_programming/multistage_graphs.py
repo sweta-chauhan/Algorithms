@@ -29,11 +29,11 @@ class GraphShortestPath:
                     destination_vertex[possible_vertex] = neighbour_vertex
 
             cost_data[possible_vertex] = local_minimum_possible_cost
-        path[0] = 0
 
+        path[0] = 0
         for stage in range(1, self.stages):
             path[stage] = destination_vertex[path[stage-1]]
-        return cost_data[0], path, destination_vertex
+        return cost_data[0], path
 
 
 
