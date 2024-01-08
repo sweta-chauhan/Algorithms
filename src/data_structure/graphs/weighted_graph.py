@@ -13,6 +13,7 @@ class AdjacentWeightedMatrix:
             self.graph[edge_start_vertex][edge_end_vertex] = weight
         return self.graph
 
+
 class AdjacentWeightedList:
     def __init__(self, number_of_edges, edges_list):
         self.edges_list = edges_list
