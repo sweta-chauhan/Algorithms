@@ -21,7 +21,7 @@ class AdjacentWeightedList:
 
     def get_graph(self):
         for edge_start_vertex, edge_end_vertex, weight in self.edges_list:
-            self.graph[edge_start_vertex] = (edge_end_vertex, weight)
+            self.graph[edge_start_vertex].append((edge_end_vertex, weight))
         return self.graph
 
 
