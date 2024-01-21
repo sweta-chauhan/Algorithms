@@ -111,6 +111,5 @@ class DijkastraShortestPathAdjacencyList:
 
         return self.distance, shortest_paths_from_source
 
-
     def calculate(self):
         return self.__find_shortest_paths_and_cost()
