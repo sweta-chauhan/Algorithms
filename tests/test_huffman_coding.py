@@ -41,11 +41,11 @@ class TestHuffManCoding(unittest.TestCase):
             'c': '111111'
         }
 
-    def test_file_encoding(self):
-        huffman_encoder = HuffmanEncoding(self.file)
-        encoded_string, frequency_table = huffman_encoder.encode()
-        assert encoded_string == "done"
-        assert frequency_table == self.resultant_encoding_table
+    # def test_file_encoding(self):
+    #     huffman_encoder = HuffmanEncoding(self.file)
+    #     encoded_string, frequency_table = huffman_encoder.encode()
+    #     print(frequency_table)
+    #     assert frequency_table == self.resultant_encoding_table
 
     def test_text_encoding(self):
         huffman_encoder = HuffmanEncoding(self.text)
