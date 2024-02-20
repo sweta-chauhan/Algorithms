@@ -4,7 +4,6 @@ from src.algorithms.dynamic_programming.knap_sack_0_1 import recursive_01_knap_s
     tabulated_01_knap_sack
 
 
-
 class Test01KnapSack(unittest.TestCase):
     def setUp(self) -> None:
         self.values = [60, 100, 120]
